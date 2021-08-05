@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.2s cubic-bezier(0.37, 1.14, 0.26, 1.24)
+}
+
+body{
+    background: rgb(238, 238, 238);
+}
+
+section{
+    margin: 2rem;
+}
+
+.heading p{
+    color: orange;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.heading h3{
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+/* header section */
+
+.header {
+    position: relative;
+    background: rgb(247, 188, 122);
+    display: flex;
+    overflow-y: hidden;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.header .logo p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.header .nav-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.header .nav-bar ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.header .nav-bar ul li a{
+    font-size: 1.5rem;
+    color:rgb(0, 0, 0)
+}
+
+.header .nav-bar ul li a.active,
+.header .nav-bar ul li a:hover{
+    color: white;
+    font-weight: 1000;
+}
+
+.header .icons{
+    margin-right: 2rem;
+}
+
+.header .icons i{
+    margin-left: 1rem;
+    color:rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+.header .icons i:hover{
+    color:white;
+}
+
+
+
+
+
+
+
+
+/* dishes section */
+
+.dishes .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 1rem;
+}
+
+.dishes .box{
+    flex: 1 1 33rem;
+    position: relative;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    border: .1rem solid rgba(0, 0, 0,.1);
+    padding-bottom: .5rem;
+    border-radius: 1rem;
+    background: white;
+} 
+
+.dishes .box .image img{
+    width: 100%;
+    height: 25rem;
+}
+
+.dishes .info{
+    text-align: center;
+}
+
+.dishes .info h4{
+    color: orange;
+    font-size: 2rem;
+    padding-top: .5rem;
+}
+
+.dishes .info .stars{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: orange;
+}
+
+.dishes .info .sub-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dishes .info .sub-info p{
+    color: orange;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+.dishes .info .sub-info button{
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+}
+
+.dishes .info .sub-info button:hover{
+    background: orange;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    letter-spacing: 10%;
+    
+}
+
+
+
+/* about section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media screen and  (max-width: 900px){
+    html{
+        font-size: 55%;
+    }
+
+    .dishes .box-container{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media screen and  (max-width: 786px){
+    html{
+        font-size: 55%;
+    }
+
+    .dishes .box-container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and  (max-width: 668px){
+    html{
+        font-size: 50%;
+    }
+
+    .dishes .box-container{
+        flex-direction: column;
+    }
+
+    .dishes .box-container .box{
+        width: 100%;
+    }
+
+}
+
+@media screen and  (max-width: 440px){
+    html{
+        font-size: 50%;
+    }
+
+    .dishes .box-container{
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .dishes .box-container .box{
+        width: 100%;
+    }
+
+}
+
+
+
+
+
